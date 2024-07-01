@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: ; */
+    /* outline: 2px solid blue; */
+}
+
+section {
+    margin-left: calc(1.5vw + 14.5px);
+    margin-right: calc(1.5vw + 14.5px);
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* HEADER */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: calc(0.5vw + 18px) calc(1.5vw + 14.5px) calc(2.2vw + 5.8px);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    margin-right: calc(21.6vw - 71px);
+}
+
+.logo h1 {
+    font-size: calc(0.5vw + 12px);
+}
+
+.sipmly {
+    font-style: italic;
+}
+
+.logo img {
+    width: calc(0.3vw + 11px);
+    height: calc(0.5vw + 12px);
+}
+
+.navInfo {
+    display: flex;
+    gap: 137px;
+}
+
+.navigationText {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style-type: none;
+}
+
+nav a {
+    color: #111111;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FD9222;
+    text-decoration: underline;
+}
+
+.icon img {
+    color: #111111;
+}
+
+.icon img:hover {
+    color: #FD9222;
+}
+
+
+/* SECTION1 */
+
+
+.titleInfo {
+    background-image: url(../images/chocolate-covered-cocoa-powder\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(97.1vw - 39px);
+    height: calc(2.5vw + 630px);
+    border-radius: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 calc(2.4vw + 11px);
+    padding-top: calc(1.7vw + 401px);
+}
+
+.info p {
+    font-size: calc(1vw + 16px);
+    font-weight: 500;
+    line-height: 121%;
+    width: calc(22.9vw + 209px);
+    margin-bottom: 32px;
+    color: white;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.primary {
+    width: calc(2.9vw + 109px);
+    height: calc(0.5vw + 39px);
+    border-radius: 30px;
+    border: 0;
+    margin-right: 14px;
+    background-color: #FD9222;
+    color: white;
+}
+
+.secondary {
+    width: calc(2.9vw + 148px);
+    height: calc(0.5vw + 39px);
+    border-radius: 30px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.primary:hover {
+    background-color: white;
+    color: #FD9222;
+}
+
+.secondary:hover {
+    border: 1px solid #FD9222;
+    color: #FD9222;
+}
+
+.down i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+    color: #FD9222;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: calc(4.4vw + 110px);
+    height: calc(1.2vw + 38px);
+    border-radius: 10px;
+    gap: calc(0.2vw + 11px);
+    text-decoration: none;
+    color: white;
+}
+
+.down:hover {
+    /* background-color: #1E1823; */
+    color: #FD9222;
+}
+
+.down:hover i{
+    background-color: #FD9222;
+    color: white;
+}
+
+
+/* BLACK CONTENT  */
+
+.blackContent {
+    width: calc(100vw + 0px);
+    margin: 0;
+    padding: 0;
+    background-color: #1E1823;
+}
+.black {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.blackText {
+    width: 326px;
+    margin: calc(3.6vw + 6.30px) calc(3.6vw + 6.30px) 0;
+    color: white;
+}
+
+.blackText h2 {
+    margin: 22px 0 18px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blackText p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 121%;
+    width: 308px;
+    padding-bottom: calc(3.6vw + 6px);
+}
+
+.line {
+    height: 124px;
+    margin-top: 110px;
+}
+
+
+
+/* TASTE CONTENT */
+
+
+
+.tasteContent {
+    margin-top: calc(6.8vw + 46px);
+}
+
+h3 {
+    font-size: calc(0.5vw + 18px);
+    font-weight: 600;
+    line-height: 116%;
+    max-width: 486px;
+    text-align: center;
+    margin-bottom: calc(0.5vw + 22px);
+    text-transform: uppercase;
+}
+
+h3 span {
+    color: #FD9222;
+}
+
+.tasteTitle {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.tasteTitle p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128%;
+    max-width: 486px;
+    text-align: center;
+}
+
+.taste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tasteForm {
+    display: flex;
+    flex-direction: column;
+    width: calc(7.9vw + 364px);
+    height: 270px;
+    margin-top: calc(2.2vw + 24px);
+}
+
+.tasteForm span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/* HOW ITS MADE */
+
+
+.made {
+    margin-top: calc(6.8vw + 46px);
+}
+
+.madeContent {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .navInfo{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+}
