@@ -179,7 +179,6 @@ nav a:hover {
 /* BLACK CONTENT  */
 
 .blackContent {
-    width: calc(100vw + 0px);
     margin: 0;
     padding: 0;
     background-color: #1E1823;
