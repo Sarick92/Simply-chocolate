@@ -12,6 +12,8 @@ section {
 
 body {
     font-family: 'Montserrat';
+    color: #111111;
+    background-color: #FAFAFA;
 }
 
 /* HEADER */
@@ -112,6 +114,11 @@ nav a:hover {
     justify-content: space-between;
 }
 
+.button {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .primary {
     width: calc(2.9vw + 109px);
     height: calc(0.5vw + 39px);
@@ -134,11 +141,13 @@ nav a:hover {
 .primary:hover {
     background-color: white;
     color: #FD9222;
+    cursor: pointer;
 }
 
 .secondary:hover {
     border: 1px solid #FD9222;
     color: #FD9222;
+    cursor: pointer;
 }
 
 .down i {
@@ -166,7 +175,6 @@ nav a:hover {
 }
 
 .down:hover {
-    /* background-color: #1E1823; */
     color: #FD9222;
 }
 
@@ -220,6 +228,11 @@ nav a:hover {
 /* TASTE CONTENT */
 
 
+.taste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .tasteContent {
     margin-top: calc(6.8vw + 46px);
@@ -229,10 +242,13 @@ h3 {
     font-size: calc(0.5vw + 18px);
     font-weight: 600;
     line-height: 116%;
-    max-width: 486px;
     text-align: center;
-    margin-bottom: calc(0.5vw + 22px);
     text-transform: uppercase;
+}
+
+.tasteContent h3 {
+    max-width: 486px;
+    margin-bottom: calc(0.5vw + 22px);
 }
 
 h3 span {
@@ -258,21 +274,39 @@ h3 span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* gap: 20px; */
 }
 
 .tasteForm {
     display: flex;
     flex-direction: column;
-    width: calc(7.9vw + 364px);
-    height: 270px;
+    width: 270px;
     margin-top: calc(2.2vw + 24px);
+    border-radius: 15px;
 }
+
+/* .tasteForm img {
+    width: calc(2.2vw + 232px);
+    height: calc(1.3vw + 176px);
+} */
 
 .tasteForm span {
     font-size: 18px;
     text-transform: uppercase;
 }
 
+#milkChocolate {
+    background-color: #FD9222;
+}
+
+#milk {
+    border: 1px solid #FD9222;
+    background-color: white;
+}
+
+#nuts {
+    background-color: #1E1823;
+}
 
 /* HOW ITS MADE */
 
@@ -283,30 +317,264 @@ h3 span {
     align-items: center;
     justify-content: center;
     margin-top: calc(6.8vw + 46px);
-    gap: 20px;
+    gap: 20px 0;
 }
 
 .madeContent {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: calc(97.1vw - 39px);
-    height: calc(2.5vw + 630px);
+    flex-wrap: wrap;
 }
 
 .madeContent img {
-    width: calc(32,1vw + 314px);
-    height: calc(2.7vw + 510px);
+    width: calc(32.1vw + 214px);
+}
+
+.madeText {
+    max-width: 452px;
+}
+
+.madeText h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 133%;
+    max-width: 350px;
+    margin: 40px 0 24px 32px;
 }
 
 .madeText {
     margin-left: 52px;
 }
 
-.madeContent ul {
+.madeText ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    margin-left: 32px;
+}
+
+.productsContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* OUR PRODUCTS */
+
+
+
+.splide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: calc(6.8vw + 46px);
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid  rgb(197, 196, 196);
+    border-radius: 10%;
+    padding: 32px 20px 32px 20px;
+    margin-top: calc(2.2vw + 24px);
 
 }
 
+.slider h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 133%;
+    text-transform: uppercase;
+    margin: 8px 0 2px;
+}
+
+.slider p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 116%;
+    margin-bottom: 18px;
+}
+
+.slidePrice {
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 10px;
+    width: 94px;
+    height: 33px;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.slidePrice:hover {
+    background-color: #FD9222;
+    border: 0;
+    color: white;
+}
+
+
+/* TOP SELLERS */
+
+
+.topSellers{
+    margin-top: calc(6.8vw + 46px);
+}
+
+.topSellers h3 {
+    margin-bottom: calc(2.2vw + 58px);
+}
+
+.topSellersImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topSellersImg img {
+    width: calc(4vw + 320px);
+    margin-bottom: calc(1.5vw + 14px);
+}
+
+.topSellersInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topSellersInfo p {
+    width: calc(12.2vw + 260px);
+}
+
+
+
+/* EXPLORE */
+
+
+
+.explore {
+    background-image: url(../images/Subcribe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 375px;
+    margin: calc(6.8vw + 46px) 0 0 0;
+    padding: 0;
+}
+
+.exploreText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore h3 {
+    color: white;
+    padding-top: calc(1.2vw + 57px);
+    margin-bottom: 24px;
+    width: calc(10.5vw + 251px);
+}
+
+.explore p {
+    width: calc(17.1vw + 262px);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128%;
+    margin-bottom: 24px;
+}
+
+.explore button {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #1E1823;
+    padding: 50px 32px 50px 32px;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerContent h3 {
+    color: white;
+    width: 300px;
+    text-align: left;
+}
+
+.contentList {
+    list-style-type: none;
+}
+
+.contentList h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 65px;
+}
+
+.contentListItem a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerIcon a {
+    color: white;
+}
+
+.footerIcon a:hover {
+    color: #FD9222;
+}
+
+.line2 {
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    margin-top: calc(3.2vw + 20px);
+    margin-bottom: calc(-1vw + 35px);
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footerNav {
+    list-style-type: none;
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: white;
+}
 
 
 

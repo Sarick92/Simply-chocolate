@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css" />
   </head>
   <body>
     <header>
@@ -32,8 +33,8 @@
             <li><a href="#chocolate">Chocolate is loved</a></li>
           </ul>
           <div class="icon">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
       </nav>
@@ -49,10 +50,12 @@
             <button class="primary">Buy now</button>
             <button class="secondary">How it's made</button>
           </div>
-          <a class="down" href="">
-            <span>scroll down</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
+          <div>
+            <a class="down" href="#tasteContent">
+              <span>scroll down</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -95,7 +98,7 @@
       </div>
     </section>
 
-    <section class="tasteContent">
+    <section class="tasteContent" id="tasteContent">
       <div class="tasteTitle">
         <h3>IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h3>
         <p>
@@ -106,28 +109,28 @@
         </p>
       </div>
       <div class="taste">
-        <div class="tasteForm">
+        <div class="tasteForm" id="milkChocolate">
           <img
             src="./images/kisspng-milk-white-chocolate-hot-chocolate-chocolate-bar-c-5af7417b10bc19 1.png"
             alt=""
           />
           <span>mILK CHOCOLATE</span>
         </div>
-        <div  class="tasteForm">
+        <div class="tasteForm" id="milk">
           <img
             src="./images/kisspng-milk-white-chocolate-hot-chocolate-chocolate-bar-c-5af7417b10bc19 1 (1).png"
             alt=""
           />
           <span>Milk</span>
         </div>
-        <div  class="tasteForm">
+        <div class="tasteForm" id="nuts">
           <img
             src="./images/kisspng-milk-white-chocolate-hot-chocolate-chocolate-bar-c-5af7417b10bc19 1 (2).png"
             alt=""
           />
           <span>nuts</span>
         </div>
-        <div  class="tasteForm">
+        <div class="tasteForm" id="milk">
           <img
             src="./images/kisspng-milk-white-chocolate-hot-chocolate-chocolate-bar-c-5af7417b10bc19 2.png"
             alt=""
@@ -140,20 +143,196 @@
     <section class="made">
       <h3>hOW IT'S <span>made?</span></h3>
       <div class="madeContent">
-        <img src="./images/video.png" alt="">
+        <img src="./images/video.png" alt="" />
         <div class="madeText">
-          <h4>Try  our chocolates today and discover the perfect balance of flavor</h4>
+          <h4>
+            Try our chocolates today and discover the perfect balance of flavor
+          </h4>
           <ul>
-            <li>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
-            <li>At the same time, prepare a water bath. Melt the butter on it.</li>
-            <li>"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
+            <li>
+              Heat the milk in a saucepan without bringing it to a boil. Add
+              sugar and cocoa powder.
+            </li>
+            <li>
+              At the same time, prepare a water bath. Melt the butter on it.
+            </li>
+            <li>
+              "Mix" the milk mixture and already liquid butter. Mix thoroughly
+              with a silicone spatula so that the mass becomes uniform and
+              silky.
+            </li>
             <li>Heat the mixture over low heat, letting it barely boil.</li>
-            <li>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+            <li>
+              Pour the chocolate into special containers (can be replaced with
+              ice molds). Allow to cool and harden.
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <h3>Our <span>pRODUCTS</span></h3>
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 1.png" alt="" />
+              <h6>orange</h6>
+              <p>Dark chocolate</p>
+              <button class="slidePrice">45 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 2.png" alt="" />
+              <h6>APPLE&CRANBERRY</h6>
+              <p>Milk chocolate</p>
+              <button class="slidePrice">50 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 3.png" alt="" />
+              <h6>lime&sea salt</h6>
+              <p>Dark chocolate</p>
+              <button class="slidePrice">66 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 4.png" alt="" />
+              <h6>pineapple</h6>
+              <p>Dark chocolate</p>
+              <button class="slidePrice">54 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 5.png" alt="" />
+              <h6>Classic</h6>
+              <p>Milk chocolate</p>
+              <button class="slidePrice">45 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 6.png" alt="" />
+              <h6>honey</h6>
+              <p>Milk chocolate</p>
+              <button class="slidePrice">50 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 7.png" alt="" />
+              <h6>Roasted fruits</h6>
+              <p>Dark chocolate</p>
+              <button class="slidePrice">66 UAH</button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slider">
+              <img src="./images/image 8.png" alt="" />
+              <h6>Classic</h6>
+              <p>White chocolate</p>
+              <button class="slidePrice">54 UAH</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="topSellers">
+      <h3><span>tOp </span>Sellers</h3>
+      <div class="topSellersImg">
+        <img src="./images/img02.png" alt="" />
+        <img src="./images/img01.png" alt="" />
+        <img src="./images/img01 (1).png" alt="" />
+      </div>
+      <div class="topSellersInfo">
+        <p>
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+        <button class="primary">Buy now</button>
+      </div>
+    </section>
+
+    <section class="explore">
+      <div class="exploreText">
+        <h3>exPLORE OUR NEW CHOCOLATE FIRST</h3>
+        <p>
+          From the velvety texture to the rich and complex flavor, our New
+          Chocolate is a true indulgence that will leave you craving more. Made
+          with only the finest ingredients and handcrafted with the utmost care,
+          each piece is a work of art that is sure to please.
+        </p>
+      </div>
+      <button class="primary">Subscribe</button>
+    </section>
+
+    <footer>
+      <div class="footerContent">
+        <h3><span>Chocolate </span>a delicious cure for a bad day</h3>
+        <div class="footerRight">
+          <ul class="contentList">
+            <h6>Contact us</h6>
+            <li class="contentListItem">
+              <p><a href="tel:+380684439426">+380 (68) 443-94-26</a></p>
+            </li>
+            <li class="contentListItem">
+              <p>
+                <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+              </p>
+            </li>
+          </ul>
+        <div class="footerIcon">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="line2">
+        <img src="./images/Line 4.png" alt="" />
+      </div>
+      <div class="navigation">
+        <ul class="footerNav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#made">How it's made?</a></li>
+          <li><a href="#products">Our products</a></li>
+          <li><a href="#sellers">Top sellers</a></li>
+          <li><a href="#chocolate">Chocolate is loved</a></li>
+        </ul>
+      </div>
+    </footer>
+
     <script src="./js/script.js"></script>
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          perPage: 4,
+          arrows: false,
+          gap: "18px",
+          breakpoints: {
+            1000: {
+              perPage: 3,
+            },
+            800: {
+              perPage: 2.5,
+            },
+            650: {
+              perPage: 2,
+            },
+            500: {
+              perPage: 1,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
   </body>
 </html>
